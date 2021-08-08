@@ -1,0 +1,732 @@
+/* Import Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap');
+/* font-family: 'Kanit', sans-serif; how to declare fonts */
+
+/*Standard styles across all pages*/
+
+html, body {
+	font-family: 'Kanit', sans-serif;
+	font-size: 16pt;
+	font-weight: 400;
+	height: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background: rgb(40, 35, 35);
+	background: radial-gradient(circle, rgba(40, 35, 35, 1) 0%, rgba(27, 19, 19, 1) 100%, rgba(159, 159, 159, 1) 134%);
+}
+
+.page-content-wrapper {
+	text-align: center;
+	max-width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-bottom: 100px;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+/* booking page */
+
+.cinemaSeating {
+	width: auto;
+	margin: auto;
+	max-width: 625PX;
+	height: 235px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	overflow-x: auto;
+	white-space: nowrap;
+	align-content: center;
+	background-color: black;
+	border-radius: 10px;
+}
+
+.cinemaSeatingHolder {
+	display: inline-block;
+	white-space: normal;
+	border-radius: 10px;
+	
+}
+
+.footer {
+	position: relative;
+	margin-left: 0;
+	margin-right: 0;
+	height: 100px;
+	width: 100%;
+	margin-top: 0;
+	bottom: 0px;
+	text-align: center;
+}
+
+#footer-content p {
+	width: 100%;
+	text-align: center !important;
+	overflow: hidden;
+	font-size: .5em !important;
+}
+
+#footer-content a {
+	text-decoration: none;
+	color: white;
+	opacity: .5;
+}
+
+.trailer-link a {
+	text-decoration: none;
+	color: white;
+	opacity: .8;
+}
+
+.trailer-link a:hover {
+	text-decoration: none;
+	color: white;
+	opacity: .8;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 1em;
+	color: white;
+}
+
+label {
+	font-weight: 600;
+	font-size: 1em;
+	color: white;
+}
+
+p {
+	font-weight: 600;
+	font-size: 1em;
+	color: white;
+}
+
+div.start-of-doc {
+	text-align: center;
+	padding-top: 110px;
+	max-width: 100%;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1pt solid white;
+}
+
+table table {
+	border: none;
+}
+
+.inner-table td {
+	margin: 0;
+	border: none;
+	white-space: nowrap;
+}
+
+description-wrap {
+	word-wrap: normal;
+}
+
+th {
+	font-weight: 600;
+	margin-top: 50px;
+	color: white;
+	font-size: 1.2em;
+	padding: 10pt;
+}
+
+tr {
+	font-weight: 400;
+	font-size: 1em;
+	color: white;
+}
+
+td {
+	font-weight: 400;
+	font-size: 1em;
+	padding: 2pt;
+	text-align: center;
+}
+
+/*Home Page Styles*/
+
+div.movie-of-the-week h1 {
+	font-weight: 700;
+	margin-bottom: 50px;
+	color: white;
+}
+
+div.trailer-link {
+	text-align: center;
+	display: block;
+	color: white;
+}
+
+div.movie-of-the-week table {
+	background-color: #222222;
+	font-weight: 600;
+	height: auto;
+	margin: 15px auto;
+}
+
+div.movie-of-the-week table img {
+	max-width: 100%;
+	width: auto;
+}
+
+div.video, iframe {
+	position: relative;
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 560px;
+	height: 315px;
+	border: 2pt white solid;
+}
+
+div.video {
+	border: none;
+	margin-bottom: 20px;
+}
+
+/*Navbar Style*/
+
+.nav-grid {
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+	display: block;
+	float: none;
+	max-height: 100px;
+	max-width: 100%;
+	width: 100%;
+	background: rgb(5, 5, 5);
+}
+
+.navbar {
+	padding: 0;
+	margin: 0px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+img.item1 {
+	min-width: 216px;
+	max-width: 20%;
+	float: left;
+	max-height: 80%;
+	width: auto;
+	margin-left: 2%;
+	margin-top: .40%;
+	margin-bottom: .20%;
+	padding: 2px;
+	overflow: visible;
+}
+
+ul.item2 {
+	padding: 0;
+	margin: 1%;
+	display: inline-block;
+	max-width: 95%;
+	width: 100%;
+	max-height: 90%;
+	height: 100%;
+	list-style-type: none;
+	background: rgb(40, 35, 35);
+}
+
+li.nav-item {
+	display: inline-block;
+	max-height: 95%;
+	height: 100%;
+	margin: .5%;
+	padding: .5%;
+}
+
+li a.nav-link {
+	white-space: nowrap;
+	max-height: auto;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-size: .6em;
+}
+
+/*active tab*/
+
+.active {
+	background: rgb(0, 0, 0);
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(33, 33, 33, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+li a {
+	max-height: auto;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	color: white;
+	font-size: .8em;
+}
+
+li a:hover {
+	background: rgb(40, 35, 35);
+	background: radial-gradient(circle, rgba(40, 35, 35, 1) 0%, rgba(27, 19, 19, 1) 100%, rgba(159, 159, 159, 1) 134%);
+	color: red;
+}
+
+/*Table Hover Style*/
+
+tr:hover td {
+	color: red;
+}
+
+tr:hover td img {
+	border-color: red;
+}
+
+/*Now Showing Page Stlye*/
+
+div.auckland h1 {
+	margin-bottom: 50px;
+	color: white;
+}
+
+div.auckland table {
+	display: inline-block;
+	vertical-align: auto;
+	overflow-x: auto;
+	max-width: 100%;
+	border-color: rgb(204, 204, 204);
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+div.auckland table td img {
+	border: 1pt solid white;
+	width: 200px;
+}
+
+div.wellington h1 {
+	margin-bottom: 50px;
+	color: white;
+}
+
+div.wellington table {
+	display: inline-block;
+	vertical-align: auto;
+	overflow-x: auto;
+	max-width: 100%;
+	border-color: rgb(204, 204, 204);
+	text-align: center;
+}
+
+div.wellington table td img {
+	width: 200px;
+}
+
+/*Upcoming Movies Page Style*/
+
+div.up-coming h1 {
+	margin-bottom: 50px;
+	color: white;
+}
+
+div.up-coming table {
+	table-layout: fixed;
+	display: block;
+	overflow-x: auto;
+	max-width: 100%;
+	border-color: rgb(204, 204, 204);
+	text-align: center;
+}
+
+div.up-coming table td img {
+	border: 1pt solid white;
+	width: 200px;
+}
+
+/*Contact Us Page Styles*/
+
+div.start-of-doc h1 {
+	margin-bottom: 30px;
+	color: white;
+	font-family: arial black;
+}
+
+div.auckland-contact table {
+	table-layout: fixed;
+	display: block;
+	overflow-x: auto;
+	max-width: 100%;
+	border-color: rgb(204, 204, 204);
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+div.auckland-contact h1 {
+	color: white;
+	font-family: arial black;
+}
+
+div.auckland-contact a {
+	color: white;
+}
+
+div.auckland-contact a:hover {
+	font-style: none;
+	color: red;
+}
+
+div.auckland-contact table td img {
+	border: 1pt solid white;
+	max-width: 100%;
+}
+
+div.wellington-contact h1 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: white;
+	font-family: arial black;
+}
+
+div.wellington-contact table {
+	table-layout: fixed;
+	display: block;
+	overflow-x: auto;
+	max-width: 100%;
+	border-color: rgb(204, 204, 204);
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+div.wellington-contact a {
+	color: white;
+}
+
+div.wellington-contact a:hover {
+	font-style: none;
+	color: red;
+}
+
+div.wellington-contact table td img {
+	border: 1pt solid white;
+	max-width: 100%;
+}
+
+div.wellington-contact table, div.auckland-contact table {
+	max-width: 1130px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Sign Up Styles*/
+
+.sign-up-message {
+	text-align: center;
+	font-family: arial;
+	color: white;
+}
+
+div.sub-container {
+	position: relative;
+	display: block;
+	color: white;
+}
+
+input {
+	width: 220px;
+}
+
+.radioButton {
+	width: 12px;
+	margin-left: 15px;
+}
+
+/*Thank You Page*/
+
+.thank-you-message h1 {
+	font-size: 24pt;
+	font-family: arial black;
+	text-align: center;
+	color: white;
+}
+
+/* Mobile Menu Anchor Jump Link */
+
+a.JumpToMenu {
+	display: block;
+	opacity: 0;
+	z-index: 0;
+}
+
+/* Page Responsive Screen Sizing */
+
+/* Responsive at 1088 pixels screen size max width */
+
+@media screen and (max-width: 1088px) {
+	ul.item2 {
+		position: static;
+	}
+	li a.nav-link {
+		font-size: .55em;
+	}
+	.movie-time-table th:nth-child(6), .movie-time-table td:nth-child(6) {
+		display: none;
+	}
+	.movie-time-table th, .movie-time-table td {
+		font-size: .9em;
+	}
+}
+
+/* Responsive at 980 pixels max width screen size */
+
+@media screen and (max-width: 980px) {
+	.movie-time-table th, .movie-time-table td {
+		font-size: .8em;
+	}
+}
+
+/* Responsive at 963 pixels max width screen size */
+
+@media screen and (max-width: 963px) {
+	li a.nav-link {
+		font-size: .55em;
+	}
+	p, th, td, a {
+		font-size: .8em;
+	}
+	div.start-of-doc h1 {
+		font-size: 1.5em;
+	}
+}
+
+/*  Responsive at 800 pixels max width screen size (ipad size) */
+
+@media screen and (max-width: 800px) {
+	.page-content-wrapper {
+		position: absolute;
+		top: 0;
+	}
+	/*Navbar Style*/
+	li a.nav-link {
+		font-size: .55em;
+	}
+	.start-of-doc {
+		display: block;
+		float: left;
+		position: static;
+		margin: 0px;
+		width: 100%;
+	}
+	/* removes end table column and image */
+	div.movie-of-the-week table img {
+		display: none !important;
+	}
+	table.movie-of-the-week th:nth-child(5), table.movie-of-the-week td:nth-child(5) {
+		display: none;
+	}
+	table.movie-of-the-week {
+		display: block;
+		position: relative;
+		table-layout: auto;
+		max-width: 438px;
+		width: 100%;
+	}
+	table th, td {
+		font-weight: 400;
+		margin: auto;
+	}
+	.movie-time-table th:nth-child(3), .movie-time-table td:nth-child(3) {
+		display: none;
+	}
+	.movie-time-table {
+		max-width: 710px !important;
+		width: 100%;
+	}
+	.up-coming th:nth-child(5), .up-coming td:nth-child(5) {
+		display: none;
+	}
+}
+
+/* Responsive at 724 pixels max width screen size */
+
+@media screen and (max-width: 724px) {
+	div.start-of-doc {
+		padding-top: 10px;
+	}
+	h1 {
+		font-size: .95em !important;
+	}
+	.page-content-wrapper::before {
+		content: "";
+		background-image: url(images/LogoSmall.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		display: block;
+		height: 85px;
+		margin: auto;
+		background-color: black;
+	}
+	.nav-grid {
+		position: static;
+		display: block;
+		padding: 2%;
+		max-width: 100%;
+		width: 100%;
+		max-height: 300px;
+		background-color: black;
+	}
+	img.item1 {
+		display: none;
+	}
+	ul.item2 {
+		float: unset;
+		clear: both;
+		text-align: center;
+		margin: 1% 1% 1% 1%;
+		max-width: 100%;
+		padding: 0;
+	}
+	.navbar ul li.nav-item, .navbar ul li a.nav-link {
+		display: block;
+		max-width: 97%;
+		width: 100%;
+		margin: .5% auto;
+	}
+	.active {
+		margin: 0%;
+		padding: 0%;
+		max-width: 98%;
+		width: 100%;
+	}
+	div.footer {
+		position: static;
+		word-wrap: break-word;
+	}
+}
+
+@media screen and (max-width:620px) {
+	.cinemaSeating {
+		justify-content: start;
+	}
+}
+
+/* Page responsive to screens 605pixels or less */
+
+@media screen and (max-width: 605px) {
+	.first-column {
+		display: none;
+	}
+	.movie-time-table {
+		max-width: 505px !important;
+		width: 100%;
+		margin: auto;
+	}
+	.up-coming td:nth-child(1), .up-coming th:nth-child(1) {
+		display: none;
+	}
+	.up-coming table {
+		font-size: .8em;
+	}
+	.auckland-contact th:nth-child(3), .auckland-contact td:nth-child(3) {
+		display: none;
+	}
+	.auckland-contact table {
+		max-width: 267px !important;
+		max-height: 137px !important;
+		font-size: .9em;
+	}
+}
+
+/* Page responsive to screens 420pixels or less */
+
+@media screen and (max-width: 420px) {
+	a.JumpToMenu {
+		font-size: .8em;
+	}
+	.start-of-doc p, a {
+		font-size: .6em;
+	}
+	th, td {
+		font-size: .7em;
+		font-weight: 600;
+	}
+	div.start-of-doc h1 {
+		font-size: 1em;
+	}
+	table.movie-of-the-week th:nth-child(4), table.movie-of-the-week td:nth-child(4) {
+		display: none;
+	}
+	table.movie-of-the-week {
+		max-width: 259px;
+		width: 100%;
+	}
+	div.video, iframe {
+		width: 100%;
+		max-width: 95%;
+		height: auto;
+	}
+	.auckland-contact table {
+		font-size: 1.1em !important;
+	}
+	.auckland-contact h1 {
+		font-size: .6em !important;
+	}
+	.wellington-contact h1 {
+		font-size: .6em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.movie-time-table {
+		font-size: .8em;
+		max-width: 297px !important;
+	}
+	.footer {
+		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.movie-time-table {
+		font-size: .6em;
+	}
+}
+
+@media screen and (max-width: 250px) {
+	th, td:nth-child(3) {
+		font-size: .4em;
+	}
+	table.movie-of-the-week {
+		max-width: 213px;
+	}
+	.input-field {
+		max-width: 100%;
+		width: 90%;
+		font-size: .5em;
+	}
+}
+
+@media screen and (max-width: 226px) {
+	.movie-time-table {
+		font-size: .4em;
+	}
+	table.movie-of-the-week {
+		display: none;
+	}
+}

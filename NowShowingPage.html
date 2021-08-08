@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Eye Candy Cinema Now Showing Page</title>
+    <!--link to external style-->
+    <link rel="stylesheet" href="cssStyleSheet.CSS">
+    <!--bootstrap style sheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!--Reference to top of page-->
+    <a name="top"></a>
+
+    <!--make content wrapper and container so a footer can be made-->
+
+
+
+    <div class="page-content-wrapper">
+
+        <!--navbar copy and paste div in pages for unity-->
+        <!--navbar code was learned on https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+        <!--logo was created with logomaker https://logomakr.com/9H9bPz-->
+
+        <div class="nav-grid">
+            <img class="item1" src="images/EyeCandyCinemaLogo.png" alt="Eye Candy Cinema Logo">
+
+            <nav class="navbar">
+
+                <ul class="item2">
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Home Page"
+                            href="index.html">HomePage</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" title="Now Showing Page"
+                            href="NowShowingPage.html">Now
+                            Showing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Bookings"
+                            href="bookings.html">Bookings</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Up Coming Movies Page"
+                            href="UpcomingMoviesPage.html">Up
+                            Coming
+                            Movies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Sign Up Page"
+                            href="SignUpPage.html">Sign Up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Contact Us Page"
+                            href="ContactUsPage.html">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="start-of-doc">
+
+            <!--now showing table and titles for tables-->
+
+            <div class="auckland">
+                <h1>Eye Candy Auckland Cinema</h1>
+
+                <table class="movie-time-table">
+                    <tr>
+                        <th class="first-column"></th>
+                        <th>Movie Title</th>
+                        <th>Description</th>
+                        <th>Day Of The Week</th>
+                        <th>Movie Show Time</th>
+                        <th>Movie Duration</th>
+                    </tr>
+
+                    <!--first data row-->
+
+                    <tr class="notfirst">
+                        <td class="first-column"><img src="images/badboysimage.jpg" alt="Bad Boys For Life Poster"></td>
+                        <td>BAD BOYS FOR LIFE</td>
+                        <td class="description-wrap">The bad boys are back again, this time facing off against a
+                            drug powerhouse duo wreaking havoc in their city.
+                            For more information follow this
+                            <a href="https://www.imdb.com/title/tt1502397/" target="blank">link</a> to IMDB for
+                            more details.
+                        </td>
+                        <td>
+                            <!--Insert table inside of table to list multiple rows in cell-->
+                            <table class="inner-table">
+                                <tr>
+                                    <td>Monday</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="inner-table">
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1700 2100 2230</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>2hrs 4mins</td>
+                    </tr>
+
+                    <!--second data row-->
+
+                    <tr class="notfirst">
+                        <td class="first-column"><img src="images/bloodshotimgage.jpg" alt="Bloodshot Poster"></td>
+                        <td>BLOODSHOT</td>
+                        <td class="description-wrap">Vin Diesel is back again this time back from the
+                            dead with superpowers and nothing is as it seems. For further information
+                            follow this <a href="https://www.imdb.com/title/tt1634106/" target="blank">link</a>
+                            to IMDB for more details.
+                        </td>
+
+                        <td>
+                            <!--Insert table inside of table to list multiple rows in cell-->
+                            <table class="inner-table">
+                                <tr>
+                                    <td>Monday</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table class="inner-table">
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>1hr 49mins</td>
+                    </tr>
+
+                    <!--third data row-->
+
+                    <tr class="notfirst">
+                        <td class="first-column"><img src="images/Sonic_the_Hedgehog_poster.jpg"
+                                alt="Sonic The Hedgehog Poster"></td>
+                        <td>SONIC THE HEDGEHOG</td>
+                        <td class="description-wrap">A small town cop discovers a fast blue hedgehog
+                            who enlists the cops help to defeat an evil genius.
+                            For futher information follow this <a href="https://www.imdb.com/title/tt3794354/"
+                                target="blank">link</a> to IMDB for more details. </td>
+
+                        <td>
+                            <!--Insert table inside of table to list multiple rows in cell-->
+                            <table class="inner-table">
+                                <tr>
+                                    <td>Monday</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table class="inner-table">
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>1hr 39mins</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <!--Wellington Now Showing Table-->
+
+            <div class="wellington">
+                <h1>Eye Candy Wellington Cinema</h1>
+
+                <table class="movie-time-table">
+                    <tr>
+                        <th class="first-column"></th>
+                        <th>Movie Title</th>
+                        <th>Description</th>
+                        <th>Day Of The Week</th>
+                        <th>Movie Show Time</th>
+                        <th>Movie Duration</th>
+                    </tr>
+
+                    <!--first data row-->
+
+                    <tr class="notfirst">
+                        <td class="first-column"><img src="images/badboysimage.jpg" alt="Bad Boys For Life"></td>
+                        <td>BAD BOYS FOR LIFE</td>
+                        <td class="description-wrap">The bad boys are back again, this time facing off against a
+                            drug powerhouse duo wreaking havoc in their city.
+                            For more information follow this
+                            <a href="https://www.imdb.com/title/tt1502397/" target="blank">link</a> to IMDB for
+                            more details.
+                        </td>
+                        <td>
+                            <!--Insert table inside of table to list multiple rows in cell-->
+                            <table class="inner-table">
+                                <tr>
+                                    <td>Monday</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="inner-table">
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1700 2100 2230</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>2hrs 4mins</td>
+                    </tr>
+
+                    <!--second data row-->
+
+                    <tr class="notfirst">
+                        <td class="first-column"><img src="images/bloodshotimgage.jpg" alt="Bloodshot the movie"></td>
+                        <td>BLOODSHOT</td>
+                        <td class="description-wrap">Vin Diesel is back again this time back from the
+                            dead with superpowers and nothing is as it seems. For further information
+                            follow this <a href="https://www.imdb.com/title/tt1634106/" target="blank">link</a>
+                            to IMDB for more details.
+                        </td>
+
+                        <td>
+                            <!--Insert table inside of table to list multiple rows in cell-->
+                            <table class="inner-table">
+                                <tr>
+                                    <td>Monday</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table class="inner-table">
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1800 1900 2000 2200</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>1hr 49mins</td>
+                    </tr>
+
+                    <!--third data row-->
+
+                    <tr class="notfirst">
+                        <td class="first-column"><img src="images/Sonic_the_Hedgehog_poster.jpg" alt="Sonic The Hedgehog">
+                        </td>
+                        <td>SONIC THE HEDGEHOG</td>
+                        <td class="description-wrap">A small town cop discovers a fast blue hedgehog
+                            who enlists the cops help to defeat an evil genius.
+                            For further information follow this <a href="https://www.imdb.com/title/tt3794354/"
+                                target="blank">link</a> to IMDB for more details. </td>
+
+                        <td>
+                            <!--Insert table inside of table to list multiple rows in cell-->
+                            <table class="inner-table">
+                                <tr>
+                                    <td>Monday</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <table class="inner-table">
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                                <tr>
+                                    <td>1500 1700 1930 2200</td>
+                                </tr>
+                            </table>
+                        </td>
+
+                        <td>1hr 39mins</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <div id="footer-content">
+                <a href="#top">Return to Top</a>
+                <p>Logo created by Nicholas R. Harding 27/06/2020 with Logomakr and are credited all rights to
+                    this at <a href="https://logomakr.com/9H9bPz" target="blank">https://logomakr.com/9H9bPz</a>. No
+                    copyright infringement is intended.
+                </p>
+                <p>Bad Boys Poster was retrieved from <a
+                        href="https://specials-images.forbesimg.com/imageserve/5e1e4c67a854780006e88bbd/960x0.jpg?cropX1=7&cropX2=634&cropY1=29&cropY2=382"
+                        target="blank">https://specials-images.forbesimg.com/imageserve/5e1e4c67a854780006e88bbd/960x0.jpg?cropX1=7&cropX2=634&cropY1=29&cropY2=382</a>
+                    all copyrights belong to forbesimg. No copyright infringement is intended.</p>
+                <p>Bloodshot Poster was retrieved from <a
+                        href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F4%2F45%2FBloodshot_-_official_film_poster.jpeg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBloodshot_(film)&tbnid=hVH8Fc6oRJPyfM&vet=12ahUKEwipjuHr6J7qAhWVKbcAHRt0CR4QMygAegUIARDNAQ..i&docid=My5UkL3tBDjfaM&w=220&h=316&q=bloodshot&ved=2ahUKEwipjuHr6J7qAhWVKbcAHRt0CR4QMygAegUIARDNAQ"
+                        target="blank">https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F4%2F45%2FBloodshot_-_official_film_poster.jpeg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBloodshot_(film)&tbnid=hVH8Fc6oRJPyfM&vet=12ahUKEwipjuHr6J7qAhWVKbcAHRt0CR4QMygAegUIARDNAQ..i&docid=My5UkL3tBDjfaM&w=220&h=316&q=bloodshot&ved=2ahUKEwipjuHr6J7qAhWVKbcAHRt0CR4QMygAegUIARDNAQ</a>
+                    all copyrights belong to Wikipedia. No copyright infringement is intended.</p>
+                <p>Sonic The Hedgehog Poster was retrieved from <a
+                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSonic_the_Hedgehog_(film)&psig=AOvVaw1CCnx947SoHqW2cGyGcWdg&ust=1593239307169000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNij8ZjtnuoCFQAAAAAdAAAAABAD"
+                        target="blank">https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSonic_the_Hedgehog_(film)&psig=AOvVaw1CCnx947SoHqW2cGyGcWdg&ust=1593239307169000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNij8ZjtnuoCFQAAAAAdAAAAABAD</a>
+                    all copyrights belong to Wikipedia. No copyright infringement is intended.</p>
+                <p>This webpage was created by Nicholas R. Harding on 27/06/2020.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

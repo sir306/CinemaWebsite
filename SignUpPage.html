@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Eye Candy Cinema Sign Up Page</title>
+    <!--link to external style-->
+    <link rel="stylesheet" href="cssStyleSheet.CSS">
+    <!--bootstrap style sheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id='thankYouPageRef' onload="refreshValues()">
+    <!--Reference to top of page-->
+    <a name="top"></a>
+
+    <!--make content wrapper and container so a footer can be made-->
+
+
+
+    <div class="page-content-wrapper">
+
+        <!--navbar copy and paste div in pages for unity-->
+        <!--navbar code was learned on https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+        <!--logo was created with logomaker https://logomakr.com/9H9bPz-->
+
+        <div class="nav-grid">
+            <img class="item1" src="images/EyeCandyCinemaLogo.png" alt="Eye Candy Cinema Logo">
+
+            <nav class="navbar">
+
+                <ul class="item2">
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Home Page" href="index.html">HomePage</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Now Showing Page" href="NowShowingPage.html">Now
+                            Showing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Bookings" href="bookings.html">Bookings</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Up Coming Movies Page" href="UpcomingMoviesPage.html">Up
+                            Coming
+                            Movies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" title="Sign Up Page" href="SignUpPage.html">Sign Up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" title="Contact Us Page" href="ContactUsPage.html">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="start-of-doc">
+
+            <div class="sign-up-message">
+                <h1>Welcome to the sign-up page</h1>
+                <p>You have just taken your first step towards our exclusive membership,<br>
+                    with your membership you are entitled to awesome discounts,<br> rewards and early updates of
+                    upcoming movies!<br>
+                    So, what are you waiting for!<br>
+                    Fill the form out below and click submit button to register!<br>
+                </p>
+                <br>
+
+                <div class="sub-container">
+
+
+                    <form id='signUp-form' class="center-form" action="ThankYouPage.html" target="self">
+                        <fieldset>
+                            <label>Please enter your details below</label>
+                            <br>
+                            <label>First Name:</label>
+                            <input id='nameInput' class="input-field" type="text" required
+                                placeholder="Enter First Name">
+                            <br>
+                            <label> Last Name: </label>
+                            <input id='lastNameInput' class="input-field" type="text" required
+                                placeholder="Enter Last Name">
+                            <br><br>
+                            <label>Select Gender</label>
+                            <br>
+                            <input id='maleRadio' type="radio" name="Gender" class="radioButton"> Male <input
+                                id='femaleRadio' type="radio" name="Gender" class="radioButton"> Female</p>
+                            <label>Tel:</label>
+                            <input id='phoneInput' class="input-field" type="tel" id="phone" name="phone"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter Phone Number" required><br>
+                            <small>Format: 123-456-7890</small>
+                            <br><br>
+                            <label>Email:</label>
+                            <input id='emailInput' class="input-field" type="email" id="email" name="email"
+                                pattern=".+@+.+.com" size="50" placeholder="Enter Email" required><br>
+                            <small>Format: myemail@mail.com</small>
+                            <br><br>
+                            <button id='submitButton' type="submit" onclick="return validateSignUp()" value="submit">Submit</button>
+                        </fieldset>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div id="footer-content">
+                <a href="#top">Return to Top</a>
+                <p>Logo created by Nicholas R. Harding 27/06/2020 with Logomakr and are credited all rights to this at
+                    <a href="https://logomakr.com/9H9bPz" target="blank">https://logomakr.com/9H9bPz</a>. No copyright
+                    infringement is intended.</p>
+                <p>This webpage was created by Nicholas R. Harding on 27/06/2020.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="javaSignUpProject.js"></script>
+
+
+</body>
+
+</html>
